@@ -1,0 +1,52 @@
+@import "palette";
+
+.footer
+{
+    padding: 50px;
+    background-color: $dark-grey-1000;
+    color: $white-1000;
+}
+
+.footer__container
+{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer_phone
+{
+    margin-bottom: 30px;
+}
+
+.footer__phone-text
+{
+    margin-bottom: 10px;
+}
+
+.footer__info:not(:last-child)
+{
+    margin-right: 50px;
+}
+
+.footer__info-text
+{
+    line-height: 24px;
+    opacity: .4;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__container
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer__info:not(:last-child)
+    {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}

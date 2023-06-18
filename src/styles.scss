@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Russo One';
+    src: url('assets/fonts/RussoOne-Regular.eot');
+    src: local('Russo One'), local('RussoOne-Regular'),
+        url('assets/fonts/RussoOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/RussoOne-Regular.woff') format('woff'),
+        url('assets/fonts/RussoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import "typography";
+@import "palette";
+@import "grid";
+
+html * {
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    @extend .headline-text;
+}
+
+p,h1,h2,h3,h4,h5,h6
+{
+    margin: 0;
+}

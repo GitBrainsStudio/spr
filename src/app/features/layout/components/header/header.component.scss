@@ -1,0 +1,81 @@
+@import "palette";
+@import "typography";
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header__logo
+{
+    font-weight: 500;
+}
+
+.header__group
+{
+    display: flex;
+    align-items: center;
+}
+
+.header__phone-number
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.header__phone-number-text
+{
+    font-size: 12px;
+    color: $blue-1000;
+    font-weight: 400;
+
+    @extend .body-text;
+}
+
+.header__callback-button
+{
+    background-color: $blue-1000;
+    color: $white-1000;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header
+    {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header__logo
+    {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .header__group
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header__phone-number
+    {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header__callback-button
+    {
+        text-align: center;
+        width: 100%;
+    }
+}
